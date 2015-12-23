@@ -41,7 +41,7 @@ export var appConfig =  {
     },
     {
       title : "title 2",
-      url : "google.com"
+      url : "examples/site1/index.html"
     }
   ],
 
