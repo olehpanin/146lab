@@ -1,0 +1,5 @@
+<ul class="nav navbar-nav">
+  <li ng-repeat="nav in navs" role="presentation" ng-class="{ active: $state.is( nav.name )} ">
+    <a href="#{{ nav.url }}" translate>{{ nav.title }}</a>
+  </li>
+</ul>

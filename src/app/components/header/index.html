@@ -1,0 +1,19 @@
+<nav class="navbar navbar-static-top navbar-inverse">
+  <div class="container-fluid">
+    <div ng-switch="$state.current.name">
+      <div ng-switch-when="example">
+        <button type="button" class="btn btn-default navbar-btn" ng-click="goBack()">
+          {{ 'back' | translate }}
+        </button>
+      </div>
+      <div ng-switch-default>
+        <acme-navbar></acme-navbar>
+        <language-selector></language-selector>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+

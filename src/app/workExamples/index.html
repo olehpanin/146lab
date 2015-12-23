@@ -1,0 +1,17 @@
+<div class="container">
+  <header-directive></header-directive>
+
+  <div class="row work-examples">
+    <div class="col-sm-6 col-md-4 example" ng-repeat="example in examples">
+      <div class="thumbnail">
+        <!--<img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">-->
+        <div class="caption">
+          <h3>{{ example.title }}</h3>
+          <!--<p>{{ awesomeThing.description }}</p>-->
+          <p><a ng-click="goToExamplePage( $event, example.url )">{{ 'link' | translate }}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

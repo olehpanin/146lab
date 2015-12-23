@@ -1,0 +1,12 @@
+<div class="btn-group language-selector" uib-dropdown uib-keyboard-nav>
+  <button id="simple-btn-keyboard-nav" type="button" class="btn btn-primary" uib-dropdown-toggle>
+    {{ model.title | translate }}
+  </button>
+  <ul class="uib-dropdown-menu" role="menu" aria-labelledby="simple-btn-keyboard-nav">
+    <li role="menuitem" ng-repeat="item in localizations">
+      <a href="#" ng-show="item.title != model.title" ng-click="changeLanguage( $event, item )">{{ item.title | translate }}</a>
+    </li>
+  </ul>
+</div>
+
+
